@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Escape Room Game - Horror Theme</title>
+    <title>Escape Room Game - Multi-Room</title>
     <!-- Link to the external CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,10 +11,19 @@
     <div id="game-container">
         <!-- Room display area -->
         <div id="room-display">
-            <!-- Image of the room for the game layout -->
-            <img src="room1.png" alt="Room Layout" id="room-image">
-			<!-- Debugging Grid Overlay -->
+            <!-- Room 1 Image -->
+            <img src="room1.png" alt="Room 1 Layout" id="room1-image" class="room-image">
+            
+            <!-- Room 2 Image (Initially Hidden) -->
+            <img src="room2.png" alt="Room 2 Layout" id="room2-image" class="room-image" style="display: none;">
+            
+            <!-- Room 3 Image (Initially Hidden) -->
+            <img src="room3.png" alt="Room 3 Layout" id="room3-image" class="room-image" style="display: none;">
+            
+            <!-- Debugging Grid for Displaying X and Y Coordinates -->
             <div id="debug-grid"></div>
+            <!-- Display for X and Y coordinates -->
+            <div id="coordinates-display">X: 0, Y: 0</div>
         </div>
         
         <!-- Interaction and code area -->
@@ -32,3 +41,6 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
